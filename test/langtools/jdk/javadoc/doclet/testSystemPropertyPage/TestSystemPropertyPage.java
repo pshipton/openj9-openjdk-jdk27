@@ -20,6 +20,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 /*
  * @test
@@ -70,7 +75,7 @@ public class TestSystemPropertyPage extends JavadocTester {
                     <header role="banner">""",
 
                 """
-                    <main role="main">
+                    <main role="main" id="skip-navbar-top">
                     <div class="header">
                     <h1>System Properties</h1>
                     </div>""",

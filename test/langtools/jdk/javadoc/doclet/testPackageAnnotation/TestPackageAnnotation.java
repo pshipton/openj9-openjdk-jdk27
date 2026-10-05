@@ -20,6 +20,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 /*
  * @test
@@ -50,7 +55,7 @@ public class TestPackageAnnotation extends JavadocTester {
         checkExit(Exit.OK);
         checkOutput("pkg1/package-summary.html", true,
                 """
-                    <main role="main">
+                    <main role="main" id="skip-navbar-top">
                     <div class="header">
                     <h1 title="Package pkg1" class="title">Package pkg1</h1>
                     </div>
@@ -87,7 +92,7 @@ public class TestPackageAnnotation extends JavadocTester {
         checkExit(Exit.OK);
         checkOutput("pkg3/package-summary.html", true,
                 """
-                    <main role="main">
+                    <main role="main" id="skip-navbar-top">
                     <div class="header">
                     <h1 title="Package pkg3" class="title">Package pkg3</h1>
                     </div>

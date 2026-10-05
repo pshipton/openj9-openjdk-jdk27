@@ -22,6 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 package jdk.javadoc.internal.doclets.formats.html;
 
@@ -118,7 +123,7 @@ public class HtmlIds {
     static final HtmlId SEARCH_RESULT_CONTAINER = HtmlId.of("search-result-container");
     static final HtmlId SEARCH_RESULT_SECTION = HtmlId.of("search-result-section");
     static final HtmlId SERVICES = HtmlId.of("services-summary");
-    static final HtmlId SKIP_NAVBAR_TOP = HtmlId.of("skip-navbar-top");
+    public static final HtmlId SKIP_NAVBAR_TOP = HtmlId.of("skip-navbar-top");
     static final HtmlId THEME_BUTTON = HtmlId.of("theme-button");
     static final HtmlId THEME_DARK = HtmlId.of("theme-dark");
     static final HtmlId THEME_LIGHT = HtmlId.of("theme-light");

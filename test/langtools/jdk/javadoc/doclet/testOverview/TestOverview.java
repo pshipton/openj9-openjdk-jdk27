@@ -20,6 +20,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 /*
  * @test
@@ -68,7 +73,7 @@ public class TestOverview extends JavadocTester {
     void checkOverview(String modulePrefix) {
         checkOutput("index.html", true,
                 """
-                    <main role="main">
+                    <main role="main" id="skip-navbar-top">
                     <div class="header">
                     <h1 class="title">Document Title</h1>
                     </div>

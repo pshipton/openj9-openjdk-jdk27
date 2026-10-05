@@ -20,6 +20,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 /*
  * @test
@@ -52,8 +57,8 @@ public class AccessSkipNav extends JavadocTester {
                 // Top navbar <a href>
                 """
                     <a href="#skip-navbar-top" title="Skip navigation links">Skip navigation links</a>""",
-                // Top navbar <span id>
+                // Top navbar
                 """
-                    <span class="skip-nav" id="skip-navbar-top"></span>""");
+                <main role="main" id="skip-navbar-top">""");
     }
 }

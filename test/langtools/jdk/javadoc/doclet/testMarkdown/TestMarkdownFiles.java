@@ -20,6 +20,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 /*
  * @test
@@ -71,7 +76,7 @@ public class TestMarkdownFiles extends JavadocTester {
                     <title>This is a Markdown heading</title>
                     """,
                 """
-                    <main role="main"><h1 id="this-is-a-markdown-heading-heading1">This is a <em>Markdown</em> heading</h1>
+                    <main role="main" id="skip-navbar-top"><h1 id="this-is-a-markdown-heading-heading1">This is a <em>Markdown</em> heading</h1>
                     <p>Lorem ipsum</p>
                     </main>
                     """);

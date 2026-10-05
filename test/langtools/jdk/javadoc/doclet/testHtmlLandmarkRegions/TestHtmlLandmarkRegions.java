@@ -20,6 +20,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 /*
  * @test
@@ -79,7 +84,7 @@ public class TestHtmlLandmarkRegions extends JavadocTester {
                     <header role="banner">
                     <nav role="navigation">""",
                 """
-                    <main role="main">
+                    <main role="main" id="skip-navbar-top">
                     <div class="header">
                     <h1 class="title">Document Title</h1>""",
                 """
@@ -109,7 +114,7 @@ public class TestHtmlLandmarkRegions extends JavadocTester {
                     <header role="banner">
                     <nav role="navigation">""",
                 """
-                    <main role="main">
+                    <main role="main" id="skip-navbar-top">
                     <div class="header">
                     <h1 class="title">Document Title</h1>""",
                 """
@@ -148,7 +153,7 @@ public class TestHtmlLandmarkRegions extends JavadocTester {
                     <nav role="navigation">
                     """,
                 """
-                    <main role="main">A sample doc file""",
+                    <main role="main" id="skip-navbar-top">A sample doc file""",
                 """
                     <footer>""",
                 """

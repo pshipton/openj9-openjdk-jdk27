@@ -22,6 +22,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 package jdk.javadoc.internal.doclets.formats.html.markup;
 
@@ -35,6 +40,7 @@ import jdk.javadoc.internal.html.Content;
 import jdk.javadoc.internal.html.ContentBuilder;
 import jdk.javadoc.internal.html.HtmlTree;
 import jdk.javadoc.internal.html.Text;
+import jdk.javadoc.internal.doclets.formats.html.HtmlIds;
 
 /**
  * Content for the {@code <body>} element.
@@ -101,7 +107,7 @@ public class BodyContents extends Content {
                 .add(header)
                 .add(HtmlTree.DIV(HtmlStyles.mainGrid)
                         .add(side == null ? Text.EMPTY : side)
-                        .add(HtmlTree.MAIN()
+                        .add(HtmlTree.MAIN().setId(HtmlIds.SKIP_NAVBAR_TOP)
                                 .add(mainContents)
                                 .add(footer == null ? Text.EMPTY : footer)));
     }

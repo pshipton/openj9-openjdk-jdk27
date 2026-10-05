@@ -20,6 +20,11 @@
  * or visit www.oracle.com if you need additional information or have any
  * questions.
  */
+/*
+ * ===========================================================================
+ * (c) Copyright IBM Corp. 2026, 2026 All Rights Reserved
+ * ===========================================================================
+ */
 
 /*
  * @test
@@ -90,7 +95,7 @@ public class TestOptions extends JavadocTester {
                 "pkg");
         checkExit(Exit.OK);
 
-        checkOutput("pkg/Foo.html", false, "navbar");
+        checkOutput("pkg/Foo.html", false, "<div class=\"top-nav\">");
         checkOutput("pkg/Foo.html", true, "Bottom text");
     }
 
